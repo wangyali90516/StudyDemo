@@ -48,3 +48,6 @@ D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Quartz.pd
 D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Quartz.xml
 D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
 D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\MoeLib.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\StackExchange.Redis.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\StackExchange.Redis.xml

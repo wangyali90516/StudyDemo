@@ -3,4 +3,5 @@
   &lt;Assembly Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" /&gt;&#xD;
   &lt;Assembly Path="D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\JYM.Core.MessageQueue.Rabbit.dll" /&gt;&#xD;
   &lt;Assembly Path="D:\Demo\设计模式Demo\DesignPatternDemo\lib\JYM.Core.MessageQueue.Rabbit.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Configuration.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

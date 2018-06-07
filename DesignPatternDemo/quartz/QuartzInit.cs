@@ -37,29 +37,29 @@ namespace DesignPatternDemo.quartz
         //}
 
         //使用TopSelf
-        public static void Main(string[] args)
-        {
-            HostFactory.New(x =>
-            {
-                x.StartAutomatically();
-                x.UseAssemblyInfoForServiceInfo();
-                x.Service<QuartzServiceRunner>(s =>
-                {
-                    s.ConstructUsing(name => new QuartzServiceRunner());
-                    s.WhenStarted(qs => qs.Start());
-                    s.WhenStopped(qs => qs.Stop());
-                });
+        //public static void Main(string[] args)
+        //{
+        //    HostFactory.New(x =>
+        //    {
+        //        x.StartAutomatically();
+        //        x.UseAssemblyInfoForServiceInfo();
+        //        x.Service<QuartzServiceRunner>(s =>
+        //        {
+        //            s.ConstructUsing(name => new QuartzServiceRunner());
+        //            s.WhenStarted(qs => qs.Start());
+        //            s.WhenStopped(qs => qs.Stop());
+        //        });
 
-                x.SetServiceName("Quartz任务启动");
-                x.SetDisplayName("Quartz任务启动");
-                x.SetDescription("Quartz任务启动");
-                x.EnableServiceRecovery(sr =>
-                {
-                    sr.RestartService(1);
-                    sr.RestartService(2);
-                });
-            }).Run();
-        }
+        //        x.SetServiceName("Quartz任务启动");
+        //        x.SetDisplayName("Quartz任务启动");
+        //        x.SetDescription("Quartz任务启动");
+        //        x.EnableServiceRecovery(sr =>
+        //        {
+        //            sr.RestartService(1);
+        //            sr.RestartService(2);
+        //        });
+        //    }).Run();
+        //}
 
         /// <summary>
         ///     测试定时任务启动

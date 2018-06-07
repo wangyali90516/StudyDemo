@@ -73,6 +73,9 @@
     <Reference Include="Microsoft.ServiceBus, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WindowsAzure.ServiceBus.4.1.10\lib\net45\Microsoft.ServiceBus.dll</HintPath>
     </Reference>
+    <Reference Include="MoeLib, Version=6.2.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MoeLib.6.2.17.0\lib\net45\MoeLib.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -97,9 +100,13 @@
     <Reference Include="ServiceStack.Text, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
       <HintPath>..\packages\ServiceStack.Text.5.1.0\lib\net45\ServiceStack.Text.dll</HintPath>
     </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.2.6\lib\net46\StackExchange.Redis.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -140,9 +147,12 @@
     <Compile Include="RabbitMq\TestRabbitModel.cs" />
     <Compile Include="RabbitMq\YemRabbitMqConst.cs" />
     <Compile Include="Redis\Common\RedisCacheHelper.cs" />
+    <Compile Include="Redis\Redis并发.cs" />
     <Compile Include="Redis\Redis缓存雪崩01.cs" />
     <Compile Include="Redis\Redis缓存雪崩02.cs" />
     <Compile Include="Redis\客户端链接池模式测试Redis正常.cs" />
+    <Compile Include="Redis\并发\ConfigManager.cs" />
+    <Compile Include="Redis\并发\SynchronizerHelper.cs" />
     <Compile Include="serviceBus\InitStart.cs" />
     <Compile Include="serviceBus\QueueClientManager.cs" />
     <Compile Include="serviceBus\ServiceBusFactory.cs" />
@@ -171,6 +181,9 @@
     <Folder Include="autoFac\" />
     <Folder Include="auzreTable\" />
     <Folder Include="blob\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
