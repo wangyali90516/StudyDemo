@@ -1,0 +1,2 @@
+﻿C# Azure 存储-Blob
+https://www.cnblogs.com/alunchen/p/5767984.html

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using Microsoft.ServiceBus.Messaging;
 using Newtonsoft.Json;
 
@@ -7,7 +6,6 @@ namespace DesignPatternDemo.serviceBus
 {
     public class ServiceBusMethodProvider
     {
-        private readonly ConcurrentDictionary<string, QueueClient> declaredQueues = new ConcurrentDictionary<string, QueueClient>();
         private readonly QueueClientManager queueClientManager;
 
         /// <summary>
@@ -27,10 +25,14 @@ namespace DesignPatternDemo.serviceBus
         public QueueClient GetQueue(string queueName)
         {
             return this.queueClientManager.CreateQueue(queueName);
-            //this.declaredQueues.add
-            //this.declaredQueues.AddOrUpdate(queueName, key => queue = this.queueClientManager.CreateQueue(queueName), (key, value) => queue = value);
         }
 
+        /// <summary>
+        /// 接收消息
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="queueName"></param>
+        /// <param name="func"></param>
         public void ReceiveMessage<T>(string queueName, Func<T, bool> func) where T : class
         {
             QueueClient queueClient = this.GetQueue(queueName);
@@ -56,7 +58,7 @@ namespace DesignPatternDemo.serviceBus
         }
 
         /// <summary>
-        ///     send message
+        ///     发送消息
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="queue"></param>

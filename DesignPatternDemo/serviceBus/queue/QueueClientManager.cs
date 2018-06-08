@@ -17,19 +17,20 @@ namespace DesignPatternDemo.serviceBus
         /// <param name="connectionString"></param>
         public QueueClientManager(string connectionString)
         {
+            //创建链接
             this.namespaceManager = NamespaceManager.CreateFromConnectionString(connectionString);
             Uri address = this.namespaceManager.Address;
             MessagingFactorySettings mfs = new MessagingFactorySettings
             {
                 TokenProvider = this.namespaceManager.Settings.TokenProvider,
-                NetMessagingTransportSettings = { BatchFlushInterval = TimeSpan.FromMilliseconds(20) }
+                NetMessagingTransportSettings = { BatchFlushInterval = TimeSpan.FromMilliseconds(20) } //批处理的时间间隔
             };
             this.messagingFactory = MessagingFactory.Create(address, mfs);
             this.queues = new ConcurrentDictionary<string, QueueClient>();
         }
 
         /// <summary>
-        ///     get one QueueClient by queueName
+        ///    创建队列
         /// </summary>
         /// <param name="queueName"></param>
         /// <param name="autoDelete"></param>
@@ -55,7 +56,7 @@ namespace DesignPatternDemo.serviceBus
         }
 
         /// <summary>
-        ///     delete one queueClient
+        ///   删除队列
         /// </summary>
         /// <param name="queueName"></param>
         public void QueueDelete(string queueName)

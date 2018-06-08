@@ -18,3 +18,17 @@ D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\obj\Debug\HangFire.csprojRes
 D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\obj\Debug\HangFire.csproj.CoreCompileInputs.cache
 D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\obj\Debug\HangFire.dll
 D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\obj\Debug\HangFire.pdb
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Hangfire.Core.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Hangfire.SqlServer.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Microsoft.Owin.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\NLog.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Owin.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Hangfire.Core.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Hangfire.SqlServer.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Microsoft.Owin.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\NLog.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\es\Hangfire.Core.resources.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\zh\Hangfire.Core.resources.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\HangFire\bin\zh-TW\Hangfire.Core.resources.dll

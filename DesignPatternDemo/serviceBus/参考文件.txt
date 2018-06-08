@@ -1,0 +1,5 @@
+﻿queue参考文件地址:
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
+
+topic参考文件地址
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions

@@ -1,0 +1,5 @@
+﻿Azure Table storage 基本用法 -- Azure Storage 之 Table
+http://www.cnblogs.com/powertoolsteam/p/5707033.html
+
+自定义 Azure Table storage 查询过滤条件
+http://www.cnblogs.com/powertoolsteam/p/5728633.html

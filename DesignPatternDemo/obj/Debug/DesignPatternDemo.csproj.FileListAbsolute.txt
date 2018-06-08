@@ -51,3 +51,8 @@ D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft
 D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\MoeLib.dll
 D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\StackExchange.Redis.dll
 D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\StackExchange.Redis.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\Demo\设计模式Demo\DesignPatternDemo\DesignPatternDemo\bin\Debug\Microsoft.WindowsAzure.Storage.xml

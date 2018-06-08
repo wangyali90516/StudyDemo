@@ -29,7 +29,7 @@ namespace DesignPatternDemo
             {
                 this.queueReceiveService.TestRabbit();
 
-                //this.queueReceiveService.SendTestAsync(new TestRabbitModel { Username = "汪" });
+                this.queueReceiveService.SendTestAsync(new TestRabbitModel { Username = "汪" });
                 return true;
 
                 #endregion 报备

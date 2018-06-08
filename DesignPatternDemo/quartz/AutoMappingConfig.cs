@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DesignPatternDemo.autoMapper;
 
 namespace DesignPatternDemo.quartz
 {

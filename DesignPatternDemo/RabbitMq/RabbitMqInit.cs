@@ -1,9 +1,4 @@
-﻿using System;
-using Autofac;
-using Topshelf;
-using Topshelf.Autofac;
-
-namespace DesignPatternDemo
+﻿namespace DesignPatternDemo
 {
     public class RabbitMq
     {
