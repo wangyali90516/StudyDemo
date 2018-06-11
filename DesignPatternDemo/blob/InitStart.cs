@@ -27,6 +27,12 @@ namespace DesignPatternDemo.blob
             CloudBlob cloudBlob = GetContainer().GetBlobReference("bbb.txt");
             //// 把文件保存到本地。
             cloudBlob.DownloadToFileAsync("D:\\aa\\bbb.txt", FileMode.Create).GetAwaiter().GetResult();
+
+            //Download
+            using (var stream = new MemoryStream())
+            {
+                cloudBlob.DownloadToStreamAsync(stream).GetAwaiter().GetResult();
+            }
             return true;
         }
 
@@ -75,25 +81,25 @@ namespace DesignPatternDemo.blob
             return container;
         }
 
-        public static void Main()
-        {
-            //上传
-            //Upload();
+        //public static void Main()
+        //{
+        //    //上传
+        //    //Upload();
 
-            //获取blob下的信息
-            var blobList = GetBlobList();
-            foreach (var item in blobList)
-            {
-                Console.WriteLine(item);
-            }
+        //    //获取blob下的信息
+        //    var blobList = GetBlobList();
+        //    foreach (var item in blobList)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
 
-            //删除文件
-            DeleteFile();
+        //    //删除文件
+        //    DeleteFile();
 
-            //下载文件
-            DownLoad();
-            Console.ReadKey();
-        }
+        //    //下载文件
+        //    DownLoad();
+        //    Console.ReadKey();
+        //}
 
         public static bool Upload()
         {

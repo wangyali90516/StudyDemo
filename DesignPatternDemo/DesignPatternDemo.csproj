@@ -47,6 +47,9 @@
     <Reference Include="CrystalQuartz.Owin, Version=4.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalQuartz.Owin.4.2.1.0\lib\CrystalQuartz.Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="JYM.Core.MessageQueue.Rabbit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\JYM.Core.MessageQueue.Rabbit.dll</HintPath>
@@ -85,6 +88,9 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.6\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -113,9 +119,11 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -142,9 +150,16 @@
     <Compile Include="auzreTable\InitStart.cs" />
     <Compile Include="auzreTable\SmsMessage.cs" />
     <Compile Include="blob\InitStart.cs" />
+    <Compile Include="dapper\Book.cs" />
+    <Compile Include="dapper\BookWithPerson.cs" />
+    <Compile Include="dapper\DapperInit.cs" />
+    <Compile Include="dapper\Person.cs" />
     <Compile Include="DesignPattern\02-01 简单工厂模式.cs" />
     <Compile Include="DesignPattern\03-02 工厂模式.cs" />
     <Compile Include="autoMapper\AutoMapperInit.cs" />
+    <Compile Include="MemoryCache\MeMoryCacheInit.cs" />
+    <Compile Include="MemoryCache\MemoryCacheService.cs" />
+    <Compile Include="NLog\NLogInit.cs" />
     <Compile Include="quartz\AutoMappingConfig.cs" />
     <Compile Include="quartz\ITestService.cs" />
     <Compile Include="quartz\QuartzInit.cs" />
@@ -198,7 +213,9 @@
   <ItemGroup>
     <Content Include="auzreTable\参考地址.txt" />
     <Content Include="blob\参考地址.txt" />
+    <Content Include="dapper\学习地址.txt" />
     <Content Include="favicon.ico" />
+    <Content Include="quartz\参考地址.txt" />
     <Content Include="serviceBus\queue\queue.jpg" />
     <Content Include="serviceBus\topic\topic.jpg" />
     <Content Include="serviceBus\参考文件.txt" />

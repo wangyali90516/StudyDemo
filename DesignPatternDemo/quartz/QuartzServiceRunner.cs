@@ -64,6 +64,7 @@ namespace DesignPatternDemo.quartz
             IJobDetail pendingTestJob = JobBuilder.Create<TestJob>().WithIdentity("测试定时任务启动", "测试定时任务启动").Build();
             ITrigger pendingAllocateAssetJobtrigger = TriggerBuilder.Create().WithIdentity("测试定时任务启动", "测试定时任务启动").StartNow().WithCronSchedule(time).Build();
             scheduler.ScheduleJob(pendingTestJob, pendingAllocateAssetJobtrigger);
+
             return scheduler;
         }
     }

@@ -9,5 +9,7 @@ namespace DesignPatternDemo.quartz
 
         public static string RedisConnectionString => ConfigurationManager.AppSettings["RedisConnectionString"];
         public static int RedisDb => int.Parse(ConfigurationManager.AppSettings["RedisDb"]);
+
+        public static string SqlDiagnosticsDb => ConfigurationManager.AppSettings["SqlDiagnosticsDb"];
     }
 }
